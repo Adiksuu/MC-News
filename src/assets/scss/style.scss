@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+$font: "Nunito", sans-serif;
+$font-bold: "Poppins", sans-serif;
+$color-black: #0f0f0f;
+$color-white: #fff;
+$color-main: #161e2d;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family: $font;
+    list-style: none;
+}
+html,
+body {
+    background: $color-main;
+}
+nav {
+    height: 86px;
+    width: 100%;
+    background: $color-black;
+    display: flex;
+    align-items: center;
+    padding: 0 48px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .left {
+        width: 156px;
+        h1 {
+            color: $color-white;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+    .right {
+        justify-content: flex-end;
+        width: -webkit-fill-available;
+        display: flex;
+        gap: 16px;
+        li {
+            position: relative;
+            content: "";
+            a {
+                color: $color-white;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                height: 1.5px;
+                width: 0%;
+                background: $color-white;
+                bottom: -4px;
+                transition: 0.2s linear;
+            }
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+section.version {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    .heading {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 250px;
+        &#trails_and_tales {
+            background: url(../../../src/assets/images/1_20/version_banner.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+        &#the_wild {
+            background: url(../../../src/assets/images/1_19/version_banner.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+        &#caves_and_cliffs {
+            background: url(../../../src/assets/images/1_17-1_18/version_banner.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+        &#nether {
+            background: url(../../../src/assets/images/1_16/version_banner.png) no-repeat;
+            background-size: cover;
+            background-position: top;
+        }
+        &#bees {
+            background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    .heading_name {
+        background: $color-black;
+        height: 36px;
+        width: fit-content;
+        padding: 3px 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 18px;
+        border-radius: 2px;
+        span {
+            color: $color-white;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: $font-bold;
+        }
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 48px;
+        .article_name {
+            h2 {
+                color: $color-white;
+                font-weight: 600;
+                font-size: 28px;
+                letter-spacing: 1px;
+            }
+        }
+        .article_name_description {
+            p {
+                color: #c5c5c5;
+                font-weight: 500;
+            }
+        }
+        .article_contents {
+            margin-top: 64px;
+            h3 {
+                color: $color-white;
+            }
+            .content {
+                margin-top: 64px;
+                text-align: left;
+                max-width: 800px;
+                img {
+                    width: 800px;
+                    height: 450px;
+                    object-fit: cover;
+                    margin-top: 16px;
+                    border-radius: 4px;
+                }
+                h4 {
+                    color: $color-white;
+                    font-size: 24px;
+                    letter-spacing: 1px;
+                }
+                p {
+                    color: #c5c5c5;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .other_articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 64px;
+        margin-bottom: 32px;
+        gap: 32px;
+        .other_name {
+            background: $color-black;
+            height: 36px;
+            width: fit-content;
+            padding: 3px 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            bottom: 18px;
+            border-radius: 2px;
+            span {
+                color: $color-white;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: $font-bold;
+            }
+        }
+        .other {
+            width: 556px;
+            height: 110px;
+            border-radius: 2px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            transition: .2s linear;
+            &#the_wild {
+                background: url(../../../src/assets/images/1_19/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#trails_and_tales {
+                background: url(../../../src/assets/images/1_20/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#caves_and_cliffs {
+                background: url(../../../src/assets/images/1_17-1_18/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#nether {
+                background: url(../../../src/assets/images/1_16/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#bees {
+                background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
+                background-position: 0 -120px;
+                background-size: 100%;
+            }
+            &:hover {
+                filter: opacity(0.7);
+            }
+        }
+    }
+}
+
+section.home {
+    // height: calc(100% - 86px);
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 64px;
+        h2 {
+            color: $color-white;
+            font-weight: 600;
+            font-size: 28px;
+            letter-spacing: 1px;
+        } 
+        p {
+            color: #c5c5c5;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 64px;
+        button {
+            height: 36px;
+            width: 156px;
+            border-radius: 2px;
+            background: $color-black;
+            color: $color-white;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 3px 9px;
+            cursor: pointer;
+            transition: .1s linear;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+    .article_list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 32px;
+        .article {
+            width: 33%;
+            height: 110px;
+            border-radius: 2px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            background-color: $color-black;
+            transition: .2s linear;
+            margin-bottom: 16px;
+            &#the_wild {
+                background: url(../../../src/assets/images/1_19/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#trails_and_tales {
+                background: url(../../../src/assets/images/1_20/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#caves_and_cliffs {
+                background: url(../../../src/assets/images/1_17-1_18/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#nether {
+                background: url(../../../src/assets/images/1_16/version_banner.png) no-repeat;
+                background-position: top;
+                background-size: 110%;
+            }
+            &#bees {
+                background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
+                background-position: 0 center;
+                background-size: 100%;
+            }
+            &:hover {
+                filter: opacity(0.7);
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+section {
+    position: relative;
+    top: 86px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: $color-black;
+}
+
+
+@media screen and (max-width: 798px) {
+    section.home {
+        .heading {
+            h2 {
+                width: calc(100% - 32px);
+            }
+        }
+        .article_list {
+            .article {
+                width: calc(100% - 32px);
+                height: 128px;
+            }
+        }
+    }
+    section.version {
+        .article {
+            width: calc(100% - 32px);
+            .article_name_description {
+                width: calc(100% - 32px);
+            }
+            .article_contents {
+                width: calc(100% - 32px);
+                .content {
+                    img {
+                        width: 100%;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+        .other_articles {
+            width: 100%;
+            .other {
+                width: calc(100% - 32px);
+            }
+        }
+    }
+    nav {
+        .left {
+            width: 196px;
+            h1 {
+                font-size: 18px;
+            }
+        }
+        .right {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

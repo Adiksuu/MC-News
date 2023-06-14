@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  list-style: none;
+}
+
+html,
+body {
+  background: #161e2d;
+}
+
+nav {
+  height: 86px;
+  width: 100%;
+  background: #0f0f0f;
+  display: flex;
+  align-items: center;
+  padding: 0 48px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav .left {
+  width: 156px;
+}
+nav .left h1 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+}
+nav .right {
+  justify-content: flex-end;
+  width: -webkit-fill-available;
+  display: flex;
+  gap: 16px;
+}
+nav .right li {
+  position: relative;
+  content: "";
+}
+nav .right li a {
+  color: #fff;
+}
+nav .right li::before {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  width: 0%;
+  background: #fff;
+  bottom: -4px;
+  transition: 0.2s linear;
+}
+nav .right li:hover::before {
+  width: 100%;
+}
+
+section.version {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+section.version .heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+}
+section.version .heading#trails_and_tales {
+  background: url(../../../src/assets/images/1_20/version_banner.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+section.version .heading#the_wild {
+  background: url(../../../src/assets/images/1_19/version_banner.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+section.version .heading#caves_and_cliffs {
+  background: url(../../../src/assets/images/1_17-1_18/version_banner.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+section.version .heading#nether {
+  background: url(../../../src/assets/images/1_16/version_banner.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+section.version .heading#bees {
+  background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section.version .heading_name {
+  background: #0f0f0f;
+  height: 36px;
+  width: fit-content;
+  padding: 3px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 18px;
+  border-radius: 2px;
+}
+section.version .heading_name span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+section.version .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 48px;
+}
+section.version .article .article_name h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+section.version .article .article_name_description p {
+  color: #c5c5c5;
+  font-weight: 500;
+}
+section.version .article .article_contents {
+  margin-top: 64px;
+}
+section.version .article .article_contents h3 {
+  color: #fff;
+}
+section.version .article .article_contents .content {
+  margin-top: 64px;
+  text-align: left;
+  max-width: 800px;
+}
+section.version .article .article_contents .content img {
+  width: 800px;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 16px;
+  border-radius: 4px;
+}
+section.version .article .article_contents .content h4 {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+section.version .article .article_contents .content p {
+  color: #c5c5c5;
+  font-size: 14px;
+}
+section.version .other_articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom: 32px;
+  gap: 32px;
+}
+section.version .other_articles .other_name {
+  background: #0f0f0f;
+  height: 36px;
+  width: fit-content;
+  padding: 3px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 18px;
+  border-radius: 2px;
+}
+section.version .other_articles .other_name span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+section.version .other_articles .other {
+  width: 556px;
+  height: 110px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s linear;
+}
+section.version .other_articles .other#the_wild {
+  background: url(../../../src/assets/images/1_19/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.version .other_articles .other#trails_and_tales {
+  background: url(../../../src/assets/images/1_20/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.version .other_articles .other#caves_and_cliffs {
+  background: url(../../../src/assets/images/1_17-1_18/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.version .other_articles .other#nether {
+  background: url(../../../src/assets/images/1_16/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.version .other_articles .other#bees {
+  background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
+  background-position: 0 -120px;
+  background-size: 100%;
+}
+section.version .other_articles .other:hover {
+  filter: opacity(0.7);
+}
+
+section.home .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 64px;
+}
+section.home .heading h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+section.home .heading p {
+  color: #c5c5c5;
+  font-weight: 500;
+  font-size: 14px;
+}
+section.home .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 64px;
+}
+section.home .buttons button {
+  height: 36px;
+  width: 156px;
+  border-radius: 2px;
+  background: #0f0f0f;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 3px 9px;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+section.home .buttons button:hover {
+  transform: scale(1.05);
+}
+section.home .article_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+section.home .article_list .article {
+  width: 33%;
+  height: 110px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: #0f0f0f;
+  transition: 0.2s linear;
+  margin-bottom: 16px;
+}
+section.home .article_list .article#the_wild {
+  background: url(../../../src/assets/images/1_19/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.home .article_list .article#trails_and_tales {
+  background: url(../../../src/assets/images/1_20/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.home .article_list .article#caves_and_cliffs {
+  background: url(../../../src/assets/images/1_17-1_18/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.home .article_list .article#nether {
+  background: url(../../../src/assets/images/1_16/version_banner.png) no-repeat;
+  background-position: top;
+  background-size: 110%;
+}
+section.home .article_list .article#bees {
+  background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
+  background-position: 0 center;
+  background-size: 100%;
+}
+section.home .article_list .article:hover {
+  filter: opacity(0.7);
+  transform: translateY(-10px);
+}
+
+section {
+  position: relative;
+  top: 86px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #0f0f0f;
+}
+
+@media screen and (max-width: 798px) {
+  section.home .heading h2 {
+    width: calc(100% - 32px);
+  }
+  section.home .article_list .article {
+    width: calc(100% - 32px);
+    height: 128px;
+  }
+  section.version .article {
+    width: calc(100% - 32px);
+  }
+  section.version .article .article_name_description {
+    width: calc(100% - 32px);
+  }
+  section.version .article .article_contents {
+    width: calc(100% - 32px);
+  }
+  section.version .article .article_contents .content img {
+    width: 100%;
+    height: 250px;
+  }
+  section.version .other_articles {
+    width: 100%;
+  }
+  section.version .other_articles .other {
+    width: calc(100% - 32px);
+  }
+  nav .left {
+    width: 196px;
+  }
+  nav .left h1 {
+    font-size: 18px;
+  }
+  nav .right li a {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

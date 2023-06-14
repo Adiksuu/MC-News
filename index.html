@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mc Updates</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="left">
+            <h1>MC News</h1>
+        </div>
+        <div class="right">
+            <li><a href="#" onclick="toSite('update_1_20')">Latest Version</a></li>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="heading">
+            <h2>GET THE LATEST NEWS ABOUT MINECRAFT GAME</h2>
+            <p>Click the button on the bottom to see the latest version</p>
+        </div>
+        <div class="buttons">
+            <button onclick="toSite('update_1_20')">LATEST VERSION</button>
+        </div>
+        <div class="article_list">
+            <div class="article" onclick="toSite('update_1_20')" id="trails_and_tales"></div>
+            <div class="article" onclick="toSite('update_1_19')" id="the_wild"></div>
+            <div class="article" onclick="toSite('update_1_17_1_18')" id="caves_and_cliffs"></div>
+            <div class="article" onclick="toSite('update_1_16')" id="nether"></div>
+            <div class="article" onclick="toSite('update_1_15')" id="bees"></div>
+
+        </div>
+
+    </section>
+
+    <script src="./dist/app.js"></script>
+    
+</body>
+</html>
