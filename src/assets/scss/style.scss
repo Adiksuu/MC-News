@@ -104,6 +104,11 @@ section.version {
             background-size: cover;
             background-position: center;
         }
+        &#village_and_pillage {
+            background: url(../../../src/assets/images/1_14/version_banner.png) no-repeat;
+            background-size: 100%;
+            background-position: 0 -200px;
+        }
     }
     .heading_name {
         background: $color-black;
@@ -233,6 +238,11 @@ section.version {
                 background-position: 0 -120px;
                 background-size: 100%;
             }
+            &#village_and_pillage {
+                background: url(../../../src/assets/images/1_14/version_banner.png) no-repeat;
+                background-position: 0 -75px;
+                background-size: 100%;
+            }
             &:hover {
                 filter: opacity(0.7);
             }
@@ -325,6 +335,11 @@ section.home {
                 background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
                 background-position: 0 center;
                 background-size: 100%;
+            }
+            &#village_and_pillage {
+                background: url(../../../src/assets/images/1_14/version_banner.png) no-repeat;
+                background-position: center;
+                background-size: 110%;
             }
             &:hover {
                 filter: opacity(0.7);

@@ -101,6 +101,11 @@ section.version .heading#bees {
   background-size: cover;
   background-position: center;
 }
+section.version .heading#village_and_pillage {
+  background: url(../../../src/assets/images/1_14/version_banner.png) no-repeat;
+  background-size: 100%;
+  background-position: 0 -200px;
+}
 section.version .heading_name {
   background: #0f0f0f;
   height: 36px;
@@ -227,6 +232,11 @@ section.version .other_articles .other#bees {
   background-position: 0 -120px;
   background-size: 100%;
 }
+section.version .other_articles .other#village_and_pillage {
+  background: url(../../../src/assets/images/1_14/version_banner.png) no-repeat;
+  background-position: 0 -75px;
+  background-size: 100%;
+}
 section.version .other_articles .other:hover {
   filter: opacity(0.7);
 }
@@ -316,6 +326,11 @@ section.home .article_list .article#bees {
   background: url(../../../src/assets/images/1_15/version_banner.png) no-repeat;
   background-position: 0 center;
   background-size: 100%;
+}
+section.home .article_list .article#village_and_pillage {
+  background: url(../../../src/assets/images/1_14/version_banner.png) no-repeat;
+  background-position: center;
+  background-size: 110%;
 }
 section.home .article_list .article:hover {
   filter: opacity(0.7);
